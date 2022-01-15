@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+body {
+  background-color: #fdfdfd;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.centerElements {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.pageTitle {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#root {
+  justify-content: center;
+  align-items: center;
+}
+
+.forms {
+  width: 90%;
+  height: auto;
+  align-items: start;
+  /*   background-color: red;
+ */
+}
+
+/*Propfile section styling starts here*/
+.submitProfile,
+.skillsSection,
+.submitGallery {
+  width: 80%;
+  background-color: #eeeeee9a;
+  margin: 20px;
+  padding: 20px;
+}
+
+.submitSkills {
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+}
+
+input {
+  width: 44%;
+  border: 0.3px solid #eeeeee;
+  background-color: #ffffff;
+  height: 40px;
+  margin: 5px;
+  border-radius: 2px;
+  padding-left: 10px;
+}
+
+.buttonSection {
+  width: 100%;
+}
+
+.buttonSection button {
+  width: 20%;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px #bcbdb796;
+  border: 0.2px solid #464646;
+  background-color: rgb(124, 7, 124);
+  color: aliceblue;
+  font-weight: 300;
+  margin-right: 3px;
+}
+
+/* .skillsSection {
+  width: 100%;
+} */
+
+.buttonSection button:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+  box-shadow: 3px 3px 3px #bcbdb7b7;
+  border: 0.2px solid #464646b9;
+  background-color: rgba(109, 7, 109, 0.801);
+  color: rgb(194, 204, 218);
+  font-weight: 600;
+}
+/*Propfile section styling ends here*/
+
+.actionsOnSkills {
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.skill {
+  height: auto;
+  width: 95%;
+  border: 0.3px solid #c0b2ce31;
+  padding: 3px;
+  margin: 3px;
+}
+
+.skill p {
+  width: 30%;
+  min-width: 150px;
+}
+
+.skill button {
+  width: 15%;
+  height: 40px;
+  min-width: 100px;
+  /* margin: 1px; */
+  border: 0.1px solid #97868628;
+  background-color: #c7c7c7;
+  font-size: 10px;
+  box-shadow: 1px 1px 1px #aca9a9;
+  cursor: pointer;
+}
+
+.skill .deleteSkill {
+  background-color: rgb(201, 33, 33);
+}
+
+.gallerySection {
+  width: 100%;
+  height: auto;
 }
